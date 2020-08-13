@@ -2,8 +2,8 @@
 
 This is an overlay for fixing the mistakes Gentoo has made. Some examples of this are:
 
-- Forcing `libglvnd` and removing `eselect-opengl`<sup>[1](#1)</sup>
-- Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it<sup>[2](#2)</sup>
+- Forcing `libglvnd` and removing `eselect-opengl`<sup>[\[1\]](#1)</sup>
+- Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it<sup>[\[2\]](#2)</sup>
 
 Table of Contents:
 
