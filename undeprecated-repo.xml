@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>undeprecated-overlay</name>
+		<description lang="en">An overlay for fixing Gentoo's mistakes.</description>
+        <homepage>https://github.com/Phate6660/undeprecated</homepage>
+		<owner type="person">
+            <name>Phate</name>
+			<email>ValleyKnight@protonmail.com</email>
+        </owner>
+        <source type="git">git://github.com/Phate6660/undeprecated.git</source>
+	</repo>
+</repositories>
