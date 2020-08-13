@@ -2,8 +2,8 @@
 
 This is an overlay for fixing the mistakes Gentoo has made. Some examples of this are:
 
-- Forcing `libglvnd` and removing `eselect-opengl`[1]
-- Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it[2]
+- Forcing `libglvnd` and removing `eselect-opengl` [1]
+- Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it [2]
 
 [1] Sorry, we LITERALLY CAN NOT help with this. Removing the package mask and forced `libglvnd` use flag<br>
 will cause `emerge` to silently ignore `x11-base/xorg-server`, `media-libs/mesa`, and `eselect-opengl`.
