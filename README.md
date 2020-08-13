@@ -36,7 +36,8 @@ Included:
 - You must edit `/var/db/repos/gentoo/profiles/base/use.force` and set `libglvnd` to `-libglvnd`
 - You must edit `/var/db/repos/gentoo/profiles/package.mask` and remove the `eselect-opengl` entry
 - `emerge -avC xorg-server mesa` (include `libglvnd` if you have it)
-- `emerge -atv xorg-server::undeprecated-overlay mesa::undeprecated-overlay xf86-input-libinput`
+- `emerge -atv xorg-server::undeprecated-overlay mesa::undeprecated-overlay`
+- `emerge -atv1 xf86-input-libinput` (needed to fix input, oneshot to keep it out of `@world`)
 - Restart X
 
 ### Use consolekit
