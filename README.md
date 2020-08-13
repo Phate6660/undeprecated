@@ -5,11 +5,8 @@ This is an overlay for fixing the mistakes Gentoo has made. Some examples of thi
 - Forcing `libglvnd` and removing `eselect-opengl`\*
 - Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it
 
-\* Sorry, we can not deal with this actually. `use.force` from the gentoo repo overrides the `use.force`<br>
-that was previously in this repo. If you don't want to use `libglvnd`, instead you must edit your<br>
-`/var/db/repos/gentoo/profiles/base/use.force` and set `libglvnd` to `-libglvnd`.
-
-You also need to edit `/var/db/repos/gentoo/profiles/package.mask` and remove the `eselect-opengl` entry.
+\* Sorry, we LITERALLY CAN NOT help with this. Removing the package mask and forced `libglvnd` use flag<br>
+will cause `emerge` to silently ignore `x11-base/xorg-server`, `media-libs/mesa`, and `eselect-opengl`.
 
 ## Installation
 
