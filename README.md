@@ -9,6 +9,8 @@ This is an overlay for fixing the mistakes Gentoo has made. Some examples of thi
 that was previously in this repo. If you don't want to use `libglvnd`, instead you must edit your<br>
 `/var/db/repos/gentoo/profiles/base/use.force` and set `libglvnd` to `-libglvnd`.
 
+You also need to edit `/var/db/repos/gentoo/profiles/package.mask` and remove the `eselect-opengl` entry.
+
 ## Installation
 
 - Copy `undeprecated.conf` to `/etc/portage/repos.conf` if it's a dir, or append it if it's a file
