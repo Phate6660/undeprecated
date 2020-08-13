@@ -15,7 +15,7 @@ Table of Contents:
 ## Installation
 
 - Copy `undeprecated.conf` to `/etc/portage/repos.conf` if it's a dir, or append it if it's a file
-- Sync repos
+- `emerge --sync undeprecated-overlay`
 
 ## Software
 
