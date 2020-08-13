@@ -2,14 +2,14 @@
 
 This is an overlay for fixing the mistakes Gentoo has made. Some examples of this are:
 
-- Forcing `libglvnd` and removing `eselect-opengl`<sup>[\[1\]](#1)</sup>
-- Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it<sup>[\[2\]](#2)</sup>
+- Forcing `libglvnd` and removing `eselect-opengl`
+- Removing `consolekit`, it's USE flags from any ebuilds using it preventing anyone from keeping it
 
 Table of Contents:
 
 - [Installation](#installation)
 - [Software](#software)
-- [Notes](#notes)
+- [How To...](#how-to)
 - [Contribution](#contribution)
 
 ## Installation
@@ -29,17 +29,26 @@ Included:
 - `x11-base/xorg-server` (without forced `libglvnd` USE flag)
 - `x11-drivers/nvidia-drivers-{340xx,390xx}`
 
-## Notes
+## How-To
 
-### 1
+### Avoid libglvnd
 
-You must edit `/var/db/repos/gentoo/profiles/base/use.force` and set `libglvnd` to `-libglvnd`.<br>
-You must edit `/var/db/repos/gentoo/profiles/package.mask` and remove the `eselect-opengl` entry.
+- You must edit `/var/db/repos/gentoo/profiles/base/use.force` and set `libglvnd` to `-libglvnd`
+- You must edit `/var/db/repos/gentoo/profiles/package.mask` and remove the `eselect-opengl` entry
+- `emerge -avC xorg-server mesa` (include `libglvnd` if you have it)
+- `emerge -atv xorg-server::undeprecated-overlay mesa::undeprecated-overlay xf86-input-libinput`
+- Restart X
 
-### 2
+### Use consolekit
 
-You must edit `/var/db/repos/gentoo/profiles/base/use.mask` and remove the `consolekit` entry<br>
-for the `consolekit` USE flag to work.
+- `emerge -atv consolekit::undeprecated-overlay`
+
+If you use polkit:
+
+- `emerge -avC polkit`
+- You must edit `/var/db/repos/gentoo/profiles/base/use.mask` and remove the `consolekit` entry for the `consolekit` USE flag to work
+- Set the `consolekit` USE flag
+- `emerge -atv polkit::undeprecated-overlay`, `consolekit` from the overlay will automatically be pulled in as a dep
 
 ## Contribution
 
