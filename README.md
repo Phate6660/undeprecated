@@ -20,6 +20,6 @@ Planned to be included:
 
 - `app-eselect/eselect-opengl`
 - `app-eselect/eselect-opencl`
-- `x11-drivers/nvidia-drivers-{390xx,430xx}`
+- `x11-drivers/nvidia-drivers-{340xx,390xx}`
 - `media-libs/mesa` (without forced libglvnd)
 - `x11-base/xorg-server` (without forced libglvnd)
