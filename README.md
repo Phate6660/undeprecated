@@ -17,7 +17,5 @@ will cause `emerge` to silently ignore `x11-base/xorg-server`, `media-libs/mesa`
 
 Included:
 
-- `app-eselect/eselect-opencl`
-- `app-eselect/eselect-opengl`
 - `sys-auth/consolekit`
 - `x11-drivers/nvidia-drivers-{340xx,390xx}`
