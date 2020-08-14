@@ -21,8 +21,8 @@ Table of Contents:
 
 Included:
 
-- `app-eselect-eselect-opencl`
-- `app-eselect-eselect-opengl`
+- `app-eselect/eselect-opencl`
+- `app-eselect/eselect-opengl`
 - `media-libs/mesa` (without forced `libglvnd` USE flag)
 - `sys-auth/consolekit`
 - `sys-auth/polkit`
