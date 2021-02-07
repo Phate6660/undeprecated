@@ -20,7 +20,7 @@ HOMEPAGE="https://wiki.gentoo.org/wiki/No_homepage"
 # Using copy by Mario Kicherer #496418
 
 SRC_URI="
-	https://dev.gentoo.org/~xarthisius/distfiles/${P}-r1.tar.xz
+	https://github.com/Phate6660/undeprecated/blob/master/app-eselect/eselect-opencl/eselect-opencl.tar.xz?raw=true
 	https://github.com/KhronosGroup/OpenCL-Headers/archive/opencl10.zip
 	https://github.com/KhronosGroup/OpenCL-Headers/archive/opencl11.zip
 	https://github.com/KhronosGroup/OpenCL-Headers/archive/opencl12.zip
